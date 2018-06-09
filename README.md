@@ -1,1 +1,1 @@
-# himinds-iot-project-cloud-simple-https-server
+# himinds-iot-project-cloud-secure-rest-api
