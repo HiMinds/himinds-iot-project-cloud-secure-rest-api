@@ -20,3 +20,41 @@ curl -k -i -H  "Accept: application/json" "https://localhost:8080/api/timestamp"
 
 
 We are using the self-signed certificates we created [here](https://github.com/HiMinds/himinds-iot-project-general-self-signed-certificate).
+
+
+Output when running the code:
+
+
+```
+
+sudi-mac:~ sudi$ curl -k -i -H  "Accept: application/json" "https://localhost:8080/api"
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 30
+ETag: W/"1e-Dll0TYXHj6QkfKyBvs/Ou5X1N+E"
+Date: Sat, 09 Jun 2018 16:56:26 GMT
+Connection: keep-alive
+
+{"id":1,"message":"hello API"}sudi-mac:~ sudi$ 
+
+```
+
+```
+
+sudi-mac:~ sudi$ curl -k -i -H  "Accept: application/json" "https://localhost:8080/api/timestamp"
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 75
+ETag: W/"4b-FNWTeZkzrG/fXPcBOR+zDNfjnnE"
+Date: Sat, 09 Jun 2018 16:57:25 GMT
+Connection: keep-alive
+
+{"id":1234,"message":"utc timestamp","timestamp":"2018-06-09 16:57:25.389"}sudi-mac:~ sudi$ 
+sudi-mac:~ sudi$ 
+
+```
+
+
+
