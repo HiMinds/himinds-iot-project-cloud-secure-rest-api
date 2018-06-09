@@ -12,13 +12,13 @@ We are using the self-signed certificates we created [here](https://github.com/H
 
 Installing the server:
 
-```
+```bash
 npm install
 ```
 
 Running the server:
 
-```
+```bash
 node server
 ```
 
@@ -27,15 +27,13 @@ node server
 We use curl to test the API:
 
 
-```
+```bash
 curl -k -i -H  "Accept: application/json" "https://localhost:8080/api"
-
 ```
 
 
-```
+```bash
 curl -k -i -H  "Accept: application/json" "https://localhost:8080/api/timestamp"
-
 ```
 
 
@@ -43,8 +41,7 @@ curl -k -i -H  "Accept: application/json" "https://localhost:8080/api/timestamp"
 Output when running the code:
 
 
-```
-
+```bash
 sudi-mac:~ sudi$ curl -k -i -H  "Accept: application/json" "https://localhost:8080/api"
 HTTP/1.1 200 OK
 X-Powered-By: Express
@@ -55,11 +52,9 @@ Date: Sat, 09 Jun 2018 16:56:26 GMT
 Connection: keep-alive
 
 {"id":1,"message":"hello API"}sudi-mac:~ sudi$ 
-
 ```
 
-```
-
+```bash
 sudi-mac:~ sudi$ curl -k -i -H  "Accept: application/json" "https://localhost:8080/api/timestamp"
 HTTP/1.1 200 OK
 X-Powered-By: Express
@@ -71,7 +66,6 @@ Connection: keep-alive
 
 {"id":1234,"message":"utc timestamp","timestamp":"2018-06-09 16:57:25.389"}sudi-mac:~ sudi$ 
 sudi-mac:~ sudi$ 
-
 ```
 
 
