@@ -7,9 +7,6 @@ Express.js is the most popular web framework for Node apps. Together with Node.j
 
 We are using the self-signed certificates we created [here](https://github.com/HiMinds/himinds-iot-project-general-self-signed-certificate). You need to copy them into the same folder as server.js.
 
-
-
-
 Installing the server:
 
 ```bash
@@ -22,10 +19,7 @@ Running the server:
 node server
 ```
 
-
-
 We use curl to test the API:
-
 
 ```bash
 curl -k -i -H  "Accept: application/json" "https://localhost:8080/api"
@@ -36,13 +30,10 @@ curl -k -i -H  "Accept: application/json" "https://localhost:8080/api"
 curl -k -i -H  "Accept: application/json" "https://localhost:8080/api/timestamp"
 ```
 
-
-
 Output when running the code:
 
-
 ```bash
-sudi-mac:~ sudi$ curl -k -i -H  "Accept: application/json" "https://localhost:8080/api"
+sudi$ curl -k -i -H  "Accept: application/json" "https://localhost:8080/api"
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
@@ -51,11 +42,11 @@ ETag: W/"1e-Dll0TYXHj6QkfKyBvs/Ou5X1N+E"
 Date: Sat, 09 Jun 2018 16:56:26 GMT
 Connection: keep-alive
 
-{"id":1,"message":"hello API"}sudi-mac:~ sudi$ 
+{"id":1,"message":"hello API"}
 ```
 
 ```bash
-sudi-mac:~ sudi$ curl -k -i -H  "Accept: application/json" "https://localhost:8080/api/timestamp"
+sudi$ curl -k -i -H  "Accept: application/json" "https://localhost:8080/api/timestamp"
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
@@ -64,9 +55,6 @@ ETag: W/"4b-FNWTeZkzrG/fXPcBOR+zDNfjnnE"
 Date: Sat, 09 Jun 2018 16:57:25 GMT
 Connection: keep-alive
 
-{"id":1234,"message":"utc timestamp","timestamp":"2018-06-09 16:57:25.389"}sudi-mac:~ sudi$ 
-sudi-mac:~ sudi$ 
+{"id":1234,"message":"utc timestamp","timestamp":"2018-06-09 16:57:25.389"}
+
 ```
-
-
-
