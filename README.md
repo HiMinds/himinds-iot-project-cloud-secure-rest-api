@@ -58,3 +58,10 @@ Connection: keep-alive
 {"id":1234,"message":"utc timestamp","timestamp":"2018-06-09 16:57:25.389"}
 
 ```
+
+Some great on-line versions:
+* [httpbin](http://httpbin.org/)
+* [jsonplaceholder](https://jsonplaceholder.typicode.com/)
+* [putsreq](https://putsreq.com/)
+
+
